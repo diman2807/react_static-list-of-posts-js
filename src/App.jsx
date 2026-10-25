@@ -18,8 +18,8 @@ export const posts = postsFromServer.map(post => {
     ...post,
     user: getUserById(post.userId),
     comments: getCommentsById(post.id),
-  }
-})
+  };
+});
 
 export const App = () => (
   <section className="App">
